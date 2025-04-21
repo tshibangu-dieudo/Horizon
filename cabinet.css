@@ -1,0 +1,245 @@
+header {
+	background-color: deepskyblue;
+	color: white;
+	display: flex;
+	
+	
+	
+	
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.lien {
+	list-style: none;
+	display: flex;
+	margin-right: 70px;
+	gap: 10px;
+	font-size: 20px;
+}
+nav {
+	display: flex;
+	justify-content: flex-end;
+}
+.lien a {
+	color: white;
+	text-decoration: none;
+}
+body
+{
+ width: 100%;
+}
+p {
+	font-size: 20px;
+	margin-left: 30px;
+}
+h3 {
+	font-size: 23px;
+} 
+li {
+	font-size: 19px;
+	padding: 5px;
+}
+a {
+	text-decoration: none;
+}
+/* le bouton humbuger*/
+.humburger {
+	display: none;
+	
+}
+@media (max-width: 768px) {
+	.lien {
+		display: none; /*la nous masquons le lien pour afficher le boutons*/
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		background-color: #333;
+		width: 100%;
+		text-align: center;
+		
+	}
+	.lien.active {
+		display: flex;
+	}
+	.humburger {
+		display: block; /* pour afficher le menu humbureger*/
+		font-size: 30px;
+		cursor: pointer;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	border: 2px solid black;
+	background: deepskyblue;
+	color: white;
+	padding: 2rem 1rem;
+	
+}
+.footer-div{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+	gap: 30px;
+	max-width: 1200px;
+	margin: auto;
+
+}
+ footer ul  {
+	text-decoration: none;
+	list-style: none;
+}
+footer li a {
+	color: #fff;
+	text-decoration: none;
+}
+footer h4 {
+	font-size: 20px;
+	border-bottom: 3px solid violet;
+	display:inline-block;
+	padding-bottom:4px;
+	margin-bottom:1rem;
+
+	/*text-decoration: underline;
+	text-decoration-color: violet;*/
+}footer .copyright {
+	
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 14px;
+	}
+	@media (max-width:768px)
+	{
+		.footer-div {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+		}
+		footer-1 {
+			width: 90%;
+			text-align: center;
+		}
+	}
+
+	/* code pour le formulaire de la page contact*/
+	form
+{
+	width :100%;
+	max-width:500px;
+	margin: 2rem auto;
+	padding:1rem;
+	border:2px solid black;
+	border-radius:20px;
+	background-color:#eeeeee;
+	box-sizing:border-box;
+	text-align:center;
+	/*border: 2px solid black;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	border-radius: 20px;
+	margin-left: 500px;
+	margin-right: 500px;
+	text-align: center;
+	background-color: #eeeeee;
+	max-width: 500px;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 1rem;*/
+
+}
+
+/* pour le mobile*/
+@media screen and (max-width :768px)
+{
+	nav.lien li {
+		display: block;
+		margin: 10px 0;
+	}
+	.footer-1 {
+		width: 100%;
+	}
+	h1,h3 {
+		text-align: center;
+		font-size: 16px;
+	}
+	p {
+		12px
+	}
+
+}
+
+
+
+ 	
+
+
+/*ajustement pour le mobile*/
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-family: sans-serif;
+		line-height: 1.5;
+		padding: 1rem;
+	}
+	header,footer,nav,section,div {
+		max-width: 100%;
+		overflow-wrap: break-word;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 1rem auto;
+	}
+	form {
+		width: 100%;
+		max-width: 500px;
+		margin: auto;
+		padding: 1rem;
+		background-color: #f8f8f8f8;
+		border-radius: 8px;
+
+
+	}
+	input,textarea,button {
+		width: 100%;
+		padding: 12px;
+		margin-bottom: 1rem;
+		font-size: 16px;
+	}
+	@media (max-width:600px)
+	{
+		body{
+			padding: 0.5rem;
+
+		}
+		h1,h2,h3,h4,p {
+			text-align: center;
+		}
+		div ul {
+			flex-direction: column;
+			align-items: center;
+		}
+
+	}
