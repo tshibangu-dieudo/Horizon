@@ -1,249 +1,173 @@
-header {
-	background-color: deepskyblue;
-	color: white;
-	display: flex;
-	
-	
-	
-	
-	width: 100%;
-	z-index: 1000;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.lien {
-	list-style: none;
-	display: flex;
-	margin-right: 70px;
-	gap: 10px;
-	font-size: 20px;
-}
-nav {
-	display: flex;
-	justify-content: flex-end;
-}
-.lien a {
-	color: white;
-	text-decoration: none;
-}
-body
-{
- width: 100%;
-}
-p {
-	font-size: 16px;
-	margin-left: 30px;
-}
-h3 {
-	font-size: 23px;
-} 
-li {
-	font-size: 19px;
-	padding: 5px;
-}
-a {
-	text-decoration: none;
-}
-/* le bouton humbuger*/
-.humburger {
-	display: none;
-	
-}
-@media (max-width: 768px) {
-	.lien {
-		display: none; /*la nous masquons le lien pour afficher le boutons*/
-		flex-direction: column;
-		position: absolute;
-		top: 60px;
-		right: 0;
-		background-color: #333333;
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cabinet.css"> 
+	<script  src="cabinet.js" defer></script>
 
-		width: 50%;
-		text-align: center;
+	<title>Cabinet juridique</title>
+</head>
+<body>
+	
+	<header>
+		<h1>Horizon</h1>
+		<nav>
+			<div class="humburger" id="humburger">&#9776;</div>
+
+			<ul class="lien" id="lien">
+				<li>
+					<a href="domaines.html">Domaine d'expertise</a>
+				</li>
+				
+				<li>
+					<a href="EQUIPE.html">équipe</a>
+				</li>
+				
+				<li>
+					<a href="formulaire.html">rendez-vous en ligne</a>
+				</li>
+
+				
+			</ul>
+		</nav>
 		
-	}
-	.lien.active {
-		display: flex;
-	}
-	.humburger {
-		display: block; /* pour afficher le menu humbureger*/
-		font-size: 30px;
-		cursor: pointer; /* pour indique c'est clicable le flech devien une mains comme ca l'utilisateur saureas que c'est clicable
-*/
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-	border: 2px solid black;
-	background: deepskyblue;
-	color: white;
-	padding: 2rem 1rem;
+		
+	</header>
 	
-}
-.footer-div{
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	text-decoration: none;
-	list-style: none;
-	gap: 30px;
-	max-width: 1200px;
-	margin: auto;
-
-}
- footer ul  {
-	text-decoration: none;
-	list-style: none;
-}
-footer li a {
-	color: #fff;
-	text-decoration: none;
-}
-footer h4 {
-	font-size: 20px;
-	border-bottom: 3px solid violet;
-	display:inline-block;
-	padding-bottom:4px;
-	margin-bottom:1rem;
-
-	/*text-decoration: underline;
-	text-decoration-color: violet;*/
-}footer .copyright {
-	
-	text-align: center;
-	margin-top: 2rem;
-	font-size: 14px;
-	}
-	@media (max-width:768px)
-	{
-		.footer-div {
-			flex-direction: column;
-			align-items: center;
-			gap: 2rem;
-		}
-		footer-1 {
-			width: 90%;
-			text-align: center;
-		}
-	}
-
-	/* code pour le formulaire de la page contact*/
-	form
-{
-	width :100%;
-	max-width:500px;
-	margin: 2rem auto;
-	padding:1rem;
-	border:2px solid black;
-	border-radius:20px;
-	background-color:#eeeeee;
-	box-sizing:border-box;
-	text-align:center;
-	/*border: 2px solid black;
-	padding-top: 19px;
-	padding-bottom: 19px;
-	border-radius: 20px;
-	margin-left: 500px;
-	margin-right: 500px;
-	text-align: center;
-	background-color: #eeeeee;
-	max-width: 500px;
-	box-sizing: border-box;
-	margin: auto;
-	padding: 1rem;*/
-
-}
-
-/* pour le mobile*/
-@media screen and (max-width :768px)
-{
-	nav.lien li {
-		display: block;
-		margin: 10px 0;
-	}
-	.footer-1 {
-		width: 100%;
-	}
-	h1,h3 {
-		text-align: center;
-		font-size: 20px;
-	}
-	p {
-		12px
-	}
-
-}
+		
+	<p>
+		Nous vous souhaitons la bienvenue sur le site officiel du<br>
+		 <strong >Cabinet juridique Horizon</strong>,une structure<br>
+		 indépendante dédiée à la défense de vos droits et à l'accompagnement<br>
+		 personnalisé.
+		 <br>
+		 <br> 
+		 Depuis sa creation,notre cabinet s'engage à offrir des sercives<br>
+		 juridique des qualité,fondés sur la rigueur,la confidentialité <br>
+		 et l'écoute active de nos clients.<br>	
+		</p>
+	<h3>un cabinet a taille humaine, proche de vous</h3>
+	<p>
+	 Que vous soyez un <strong>particulier</strong> ,une <br>
+	 <strong>entreprise</strong> ou <strong>collectivité</strong>, <br>
+	 nous vous accompagnons dans toutes vos démarche juridiques. <br>
+	 Nous ,mettons un points d'honneur à crée une relation de confiance<br>
+	  et à vous explique chaque étape de la procédure dans un langage clair.
+	</p>
+	<img src="BI.jpg" alt="nous sommes pret a nous accompagne">
 
 
-
- 	
-
-
-/*ajustement pour le mobile*/
-	* {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-	}
-	body {
-		font-family: sans-serif;
-		line-height: 1.5;
-		padding: 1rem;
-	}
-	header,footer,nav,section,div {
-		max-width: 100%;
-		overflow-wrap: break-word;
-	}
-	img {
-		max-width: 100%;
-		height: auto;
-		display: block;
-		margin: 1rem auto;
-	}
-	form {
-		width: 100%;
-		max-width: 500px;
-		margin: auto;
-		padding: 1rem;
-		background-color: #f8f8f8f8;
-		border-radius: 8px;
+	<h3>Nos engagements</h3>
+	<div id="h">
+		<ul>
+			<li>Vous écouter avec attention</li>
+			<li>Vous conseiller avec honnêteté</li>
+			<li>Vous représenter avec détermination</li>
+			<li>Vous informer avec clarté</li>
+		</ul>
+		<p>
+			Nous croyons en un droit accessible,compréhensible et humain.
+		</p>
+	</div>
 
 
-	}
-	input,textarea,button {
-		width: 100%;
-		padding: 12px;
-		margin-bottom: 1rem;
-		font-size: 16px;
-	}
-	@media (max-width:600px)
-	{
-		body{
-			padding: 0.5rem;
+	<h3>Nos domaines de compétence:</h3>
+	<div>
+		<ul>
+			<li>Droit de la famille</li>
+			<li>Droit du travail</li>
+			<li>Droit pénal  </li>
+			<li>Droit des affqires</li>
+			<li>Droit immobilier</li>
+		</ul>
+	</div>
+	<p>
+		<strong>prenez rendez-vous dès aujourd'hui pour une consultation personnalisée.</strong>
+	</p>
+	<div id="hh">
+		<h3>Vous avez une question ?<br> 
+		Besoins d'un rendez-vous ?</h3>
+		<p>
+			consultez notre page <a href="contact.html">conctact</a> pour nous joindre ou planifier une consultation.
+			nous somme la pour vous accompagne a chaque etape
+		</p>
+	</div>
 
-		}
-		p {
-			text-align: center;
-		}
-		h4 {
-			font-size: 20px;
-		}
-		div ul {
-			flex-direction: column;
-			align-items: center;
-		}
+	<footer>
+		<div class="footer-div">
+		<h1>Horizon</h1>
+		<div class="footer-1">
+			<h4>Menu</h4>
+			<ul>
+				<li>
+					<a href="Ressource.html">Ressources</a>
+				</li>
+				<br>
+				<br>
+				<li>
+					<a href="FAQ.html">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-1">
+			<h4>Entreprise</h4>
+			<ul>
+				<li>
+					<a href="domaines.html">Domaines d'expertise</a>
+				</li> <br>
+				<br>
+				<li>
+					<a href="a-propos.html">A propos de nous</a>
+				</li><br>
+				<br>
+				<li>
+					<a href="EQUIPE.html">équipe</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="footer-1">
+			<h4>Légal</h4>
+			<ul>
+				<li>
+				<a href="confidentialite.html">Déclaration de confidentialité</a>
+				</li>
+				<br>
+				<br>
+				<li>
+					<a href="condition.html">conditions générale</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-1">
+			<h4>contact</h4>
+			<ul>
+				<li>
+				<a href="contact.html">contactez-nous</a>
+				</li>
+				<br>
+				<br>
+				<li>
+					<a href="mailto:tshibangudieduo750@gmail.com">Email</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-	}
+
+ 
+
+		<div class="copyright">
+			<p>
+				&copy; 2025 Horizon. Tous droits reserves.
+			</p>
+		</div>
+	</footer>
+
+ 
+
+
+</body>
+</html>
